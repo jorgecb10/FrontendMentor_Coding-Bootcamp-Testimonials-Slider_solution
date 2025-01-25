@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./src/images/favicon-32x32.png">
+  <title>Frontend Mentor | Coding Bootcamp Testimonials Slider</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dist/output.css">
+</head>
+<body class="font-inter flex flex-col items-center justify-center h-dvh"> 
+  <main class="contenedor">
+    <div class="flex flex-col items-center md:flex-row-reverse">
+      <div class="relative">
+        <!-- Carrusel de Imágenes -->
+        <div class="carrusel-imagenes py-8">
+          <div id="imageCarousel" class="overflow-hidden w-[75%] mx-auto shadow-2xl">
+            <div class="flex transition-transform duration-500">
+              <img src="src/images/image-tanya.jpg" alt="image-tanya">
+              <img src="src/images/image-john.jpg" alt="image-john">
+            </div>
+          </div>
+        </div>
+        
+  
+        <!-- Controles de navegación -->
+        <div class="botones-nav inline-block gap-4 bg-white rounded-full absolute bottom-4 z-10 transform translate-x-1/2 right-1/2 md:right-3/4">
+          <div class="flex justify-center items-center gap-7 px-2">
+            <div>
+              <button id="prev" class="text-white py-2">
+                <img src="src/images/icon-prev.svg" alt="icon-preview">
+              </button>
+            </div>
+            <div>
+              <button id="next" class="text-white py-2">
+                <img src="src/images/icon-next.svg" alt="icon-next">
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Carrusel de Texto -->
+      <div id="textCarousel" class="carrusel-texto mt-12 pt-5 md:mt-0">
+        <div class="transition-opacity duration-500">
+          <div class="info text-center md:text-left">
+            <p class="text-dark-bkue">
+              “ I’ve been interested in coding for a while but never taken the jump, until now. 
+              I couldn’t recommend this course enough. I’m now in the job of my dreams and so 
+              excited about the future. ”
+            </p>
+
+            <div class="md:flex md:items-center md:gap-3 md:mt-5">
+              <h3 class="text-lg font-bold mt-4 md:mt-0 text-dark-bkue">Tanya Sinclair</h3>
+              <p class="text-grayish-blue">UX Engineer</p>
+            </div>
+          </div>
+          <div class="info text-center md:text-left hidden">
+            <p class="text-dark-bkue">
+              “ If you want to lay the best foundation possible I’d recommend taking this course. 
+              The depth the instructors go into is incredible. I now feel so confident about 
+              starting up as a professional developer. ”
+            </p>
+
+            <div class="md:flex md:items-center md:gap-3 md:mt-5">
+              <h3 class="text-lg font-bold mt-4 md:mt-0 text-dark-bkue">John Tarkpor</h3>
+              <p class="text-grayish-blue">Junior Front-end Developer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="contenedor">
+    <div class="attribution text-center absolute bottom-0 md:right-1/2 md:transform md:translate-x-1/2">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </footer>
+
+  <script src="src/js/app.js"></script>
+</body>
+</html>
