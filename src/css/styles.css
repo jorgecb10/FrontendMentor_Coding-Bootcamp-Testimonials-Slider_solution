@@ -39,5 +39,7 @@ body {
 @media (min-width: 768px) {
     .carrusel-texto {
         background-position: 10% top;
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
     }
 }
